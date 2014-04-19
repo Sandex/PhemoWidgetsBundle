@@ -24,7 +24,7 @@
     <?php if ($widget->getTotalRows()): ?>
         <?php $this->partial('_pagination', ['widget' => $widget]) ?>
     <?php endif ?>
-    
+
 </div>
 
 
