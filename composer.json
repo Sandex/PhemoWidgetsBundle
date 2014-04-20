@@ -4,7 +4,7 @@
     "require": {
         "php": ">=5.3.0",
         "components/jquery": "2.1.0",
-        "twitter/bootstrap": "3.0.*@dev"        
+        "components/bootstrap": "3.1.1"
     },
     "config": {
         "component-dir": "public/assets",
