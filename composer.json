@@ -4,11 +4,38 @@
     "require": {
         "php": ">=5.3.0",
         "components/jquery": "2.1.0",
+        "components/activity-indicator": "*",
         "components/bootstrap": "3.1.1"
     },
     "autoload": {
         "psr-0": {
             "PhemoWidgetsBundle": ""
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "components/activity-indicator",
+                "type": "component",
+                "version": "1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/neteye/jquery-plugins.git",
+                    "reference": "master"
+                },
+                "require": {
+                    "robloach/component-installer": "*"
+                },
+                "extra": {
+                    "component": {
+                        "scripts": [
+                            "activity-indicator/activity-indicator.js"
+                        ]
+                    }
+                }
+
+            }
+        }
+    ]
 }
