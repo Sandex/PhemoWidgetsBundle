@@ -21,7 +21,7 @@
         <?php endforeach ?>
     <?php else: ?>
         <tr>
-            <td colspan="<?php echo count($widget->getFileds()) + 1 ?>">
+            <td colspan="<?php echo count($widget->getTotalRows()) + 1 ?>">
                 <i><?php echo $this->getDI()->get('t' . $widget->getWidgetName())->_('No results found') ?></i>
             </td>
         </tr>
