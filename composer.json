@@ -11,5 +11,31 @@
         "psr-0": {
             "PhemoWidgetsBundle": ""
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "components/activity-indicator",
+                "type": "component",
+                "version": "1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/neteye/jquery-plugins.git",
+                    "reference": "master"
+                },
+                "require": {
+                    "robloach/component-installer": "*"
+                },
+                "extra": {
+                    "component": {
+                        "scripts": [
+                            "activity-indicator/activity-indicator.js"
+                        ]
+                    }
+                }
+
+            }
+        }
+    ]    
 }
