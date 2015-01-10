@@ -6,7 +6,7 @@
 <tbody>
     <?php if ($widget->getTotalRows()): ?>
         <?php foreach ($widget->getData() as $entity): ?>
-            <?php /* @var $entity Phemo\WidgetsBundle\Entity\Product */ ?>
+            <?php /* @var $entity \Phalcon\Mvc\Model */ ?>
             <tr>
                 <?php foreach ($widget->getRowValues($entity) as $value): ?>
                     <td><?php echo $value ?></td>
